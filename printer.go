@@ -39,6 +39,11 @@ type Printer struct {
 	Pointer int
 }
 
+// New create new printer
+func New() *Printer {
+	return new(Printer)
+}
+
 // Indent pointer one time to the right right.
 // There is a limit of 10 characters, after which you may not move more.
 func (p *Printer) Indent() *Printer {

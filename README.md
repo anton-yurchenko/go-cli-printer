@@ -25,7 +25,7 @@ import (
 )
 
 func main() {
-    p := printer.Printer{}
+    p := printer.New()
 
     p.PrintWithBullet(printer.Action, "Initializing application")
     p.SuccessWithBullet()
