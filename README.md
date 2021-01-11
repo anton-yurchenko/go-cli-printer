@@ -14,6 +14,8 @@ Simple and Pretty output library for CLI applications
 
 ### Example
 
+![PIC](docs/example.png)
+
 ```golang
 package main
 
@@ -49,8 +51,6 @@ data:
     p.Outdent().FailureWithBullet()
 }
 ```
-
-![PIC](docs/example.png)
 
 ## License
 
