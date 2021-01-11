@@ -1,7 +1,8 @@
 # go-cli-printer
 
-[![Release](https://img.shields.io/github/v/release/anton-yurchenko/go-cli-printer)](https://github.com/anton-yurchenko/go-cli-printer/releases/latest)
+[![Go Reference](https://pkg.go.dev/badge/github.com/anton-yurchenko/go-cli-printer.svg)](https://pkg.go.dev/github.com/anton-yurchenko/go-cli-printer)
 [![Go Report Card](https://goreportcard.com/badge/github.com/anton-yurchenko/go-cli-printer)](https://goreportcard.com/report/github.com/anton-yurchenko/go-cli-printer)
+[![Release](https://img.shields.io/github/v/release/anton-yurchenko/go-cli-printer)](https://github.com/anton-yurchenko/go-cli-printer/releases/latest)
 [![License](https://img.shields.io/github/license/anton-yurchenko/go-cli-printer)](LICENSE.md)
 
 Simple and Pretty output library for CLI applications
