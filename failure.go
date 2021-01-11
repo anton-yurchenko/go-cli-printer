@@ -1,6 +1,9 @@
 package printer
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func (p *Printer) failure(bullet, text string) {
 	p.Print(fmt.Sprintf("%v%v%v%v", bullet, string(colorRed), text, string(colorReset)))
@@ -24,4 +27,16 @@ func (p *Printer) FailureMessage(text string) {
 // FailureMessageWithBullet prints custom failure message with a success emoji prefix in current position.
 func (p *Printer) FailureMessageWithBullet(text string) {
 	p.failure(fmt.Sprintf("%v ", Failure.String()), text)
+}
+
+// Fatal prints custom failure message in current position and exits execution with exit code 1.
+func (p *Printer) Fatal(text string) {
+	p.failure("", text)
+	os.Exit(1)
+}
+
+// FatalWithBullet prints custom failure message with a success emoji prefix in current position and exits execution with exit code 1.
+func (p *Printer) FatalWithBullet(text string) {
+	p.failure(fmt.Sprintf("%v ", Failure.String()), text)
+	os.Exit(1)
 }
